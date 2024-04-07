@@ -1,69 +1,171 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>王睿琦</title>
     <style>
       body {
         margin: 0;
+        height: 100vh;
+        background-color: #999;
+      }
+      .flex {
+        display: flex;
+      }
+      .baise {
+        background-color: white;
+      }
+      .flex1 {
+        flex: 1;
+      }
+      .shu {
+        flex-direction: column;
+      }
+      .mg8 {
+        margin: 8px;
+      }
+      .mg8r {
+        margin-right: 8px;
+      }
+      .mg8t {
+        margin-top: 8px;
+      }
+      .yinying {
+        box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px,
+          rgb(0, 0, 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
+      }
+      @media (max-width: 600px) {
+        .cebian {
+          display: none;
+        }
+        .neirong {
+          flex-direction: column;
+        }
+        .youqu {
+          margin-left: 8px;
+        }
       }
     </style>
   </head>
-  <body>
-    <div style="background-color: #ffc0cb; text-align: center; padding: 30px">
-      <img
-        src="https://s21.ax1x.com/2024/04/05/pFbbciF.jpg"
-        alt="王睿琦"
-        width="150px"
-        height="=100px"
-      />
-    </div>
-    <div style="text-align: center">
-      <iframe
-        frameborder="no"
-        border="0"
-        marginwidth="0"
-        marginheight="0"
-        width="330"
-        height="86"
-        src="//music.163.com/outchain/player?type=2&id=2071752628&auto=1&height=66"
-      ></iframe>
-    </div>
+  <body class="flex">
+    <!--侧边栏-->
     <div
-      style="
-        background-color: #ffb6c1;
-        text-align: center;
-        max-width: 700dx;
-        margin: 30px auto;
-        padding: 15px;
-        line-hight: 1.7;
-        font-size: 30px;
-      "
+      style="width: 200px; z-index: 2; border-right: 1px solid #999"
+      class="baise yinying cebian"
     >
-      <p>你好</p>
-      <p>我叫王睿琦</p>
-      <p>这是我的照片</p>
-      <img
-        src="https://s21.ax1x.com/2024/04/05/pFbqYex.jpg"
-        width="200px"
-        height="250px"
-      />
-    </div>
-    <div
-      style="
-        background-color: #ffc0cb;
-        text-align: center;
-        padding: 50px;
-        font-size: 35px;
-      "
-    >
-      <a
-        href="https://m.weibo.cn/u/7145854258?t=0&luicode=10000011&lfid=100103type%3D1%26q%3Dwrq"
-        >点击看美女</a
+      <!--头像栏-->
+      <div
+        style="
+          padding: 10px;
+          align-items: center;
+          justify-content: center;
+          border-bottom: 1px solid #999;
+          background-color: #f4caf1;
+        "
+        class="flex"
       >
+        <img
+          src="https://s21.ax1x.com/2024/04/05/pFbbciF.jpg"
+          width="40px"
+          height="40px"
+          alt="touxiang"
+        />
+        <p style="margin-left: 10px; color: rgb(181, 74, 181)">王睿琦</p>
+      </div>
 
-      <a href="https://shrimp0817.github.io/wrq2/">下一页</a>
+      <!--简介栏-->
+      <div style="background-color: #f97df1" class="flex1"></div>
+    </div>
+    <!--主区域-->
+    <div class="flex1 flex shu">
+      <!--口号栏-->
+      <div
+        style="
+          height: 80px;
+          z-index: 1;
+          border-bottom: 1px solid #999;
+          background-image: url(https://s21.ax1x.com/2024/04/07/pFLFoVS.jpg);
+          background: size height 80px;
+          background-position: center;
+        "
+        class="baise yinying"
+      ></div>
+      <!--内容栏-->
+      <div
+        style="overflow: auto; background-color: #f8c5f5"
+        class="flex1 flex neirong"
+      >
+        <!--左区-->
+        <div style="flex: 3" class="flex shu mg8">
+          <!--安利区-->
+          <div class="flex shu">
+            <!--列表项-->
+            <div style="height: 200px;" class="baise mg8t yinying flex">
+              <!--图片-->
+              <div style="margin-left: 20px; margin-top: 15px">
+                <img
+                  src="https://s21.ax1x.com/2024/04/07/pFLkHeK.jpg"
+                  width="200px"
+                  height="165px"
+                />
+              </div>
+              <!--文字-->
+              <div style="margin-left: 20px;margin-top: 0px;">
+                <img src="https://s21.ax1x.com/2024/04/07/pFLAypd.jpg"
+                width="800px"
+                height="200px">
+              </div>
+            </div>
+            <div style="height: 200px" class="baise mg8t yinying">
+              <!--图片-->
+              <div style="margin-left: 700px; margin-top: 15px;justify-content: flex-start;">
+                <img src="https://s21.ax1x.com/2024/04/07/pFLkbdO.jpg"
+                width="200px"
+                height="165px">
+
+              </div>
+              <!--文字-->
+              <div></div>
+            </div>
+            <div style="height: 200px" class="baise mg8t yinying">
+              <!--图片-->
+              <div></div>
+              <!--文字-->
+              <div></div>
+            </div>
+            <div style="height: 200px" class="baise mg8t yinying">
+              <!--图片-->
+              <div></div>
+              <!--文字-->
+              <div></div>
+            </div>
+          </div>
+        </div>
+        <!--右区-->
+        <div style="flex: 1" class="flex shu mg8r mg8t youqu">
+          <!--音乐播放-->
+          <div
+            style="height: 80px; background-color: #f7acf2"
+            class="baise yinying"
+          >
+            <iframe
+              frameborder="no"
+              marginwidth="0"
+              marginheight="0"
+              width="500px"
+              height="100px"
+              src="//music.163.com/outchain/player?type=2&id=2071752628&auto=1&height=66"
+              autoplay="autoplay"
+              control="control"
+              loop="loop"
+            >
+            </iframe>
+          </div>
+          <!--列表-->
+          <div style="height: 400px" class="baise mg8t yinying"></div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
