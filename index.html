@@ -56,9 +56,12 @@
         .youqu {
           margin-left: 8px;
         }
-
-        .kuang {
-          width: 500px;
+        .yinyue {
+          justify-content: center;
+        }
+        .anli {
+          margin: 0 0 8px;
+          flex: auto;
         }
       }
     </style>
@@ -68,7 +71,7 @@
     <!--侧边栏-->
     <div
       style="
-        width: 200px;
+        width: 240px;
         z-index: 2;
         border-right: 1px solid #999;
         background-color: #f8c5f5;
@@ -88,43 +91,152 @@
       >
         <img
           src="https://s21.ax1x.com/2024/04/05/pFbbciF.jpg"
-          width="40px"
-          height="40px"
+          width="60px"
+          height="60px"
           alt="touxiang"
         />
-        <p style="margin-left: 10px; color: rgb(181, 74, 181)">王睿琦</p>
+        <p
+          style="
+            margin-left: 10px;
+            color: rgb(181, 74, 181);
+            font-family: 楷体, Simkai, sans-serif;
+            font-size: 35px;
+          "
+        >
+          王睿琦
+        </p>
       </div>
 
       <!--简介栏-->
-      <div style="background-color: #fbb2f5; height: 600px" class="flex1"></div>
+      <div style="background-color: #fbb2f5; height: 290px;flex-direction: column;" class="flex1 flex">
+        <!--微博-->
+        <div style="height: 70px; width: 300px" class="flex">
+          <div style="margin-top: 10px; margin-left: 10px">
+            <img
+              src="https://s21.ax1x.com/2024/04/08/pFLRZdJ.md.png"
+              width="50px"
+              height="50px"
+            />
+          </div>
+          <div style="text-decoration: none;">
+            <a style="text-decoration: none;" href="https://weibo.com/u/7145854258" >
+              <p
+              style="
+                margin-left: 12px;
+                margin: top 30px;
+                color: #a939a2;
+                font-size: 20px;
+              "
+              >
+              @SNH48-王睿琦
+              </p>
+            </a>
+          </div>
+        </div>
+        <!--B站-->
+        <div style="height: 70px; width: 300px" class="flex">
+          <div style="margin-top: 10px; margin-left: 10px">
+            <img
+              src="https://s21.ax1x.com/2024/04/08/pFLhuJs.png"
+              width="50px"
+              height="50px"
+            />
+          </div>
+          <div>
+            <a style="text-decoration: none;" href="https://space.bilibili.com/398414048?spm_id_from=333.337.0.0">
+              <p
+              style="
+                margin-left: 12px;
+                margin: top 30px;
+                color: #a939a2;
+                font-size: 20px;
+              "
+            >
+              @有点怂的你琦
+              </p>
+            </a>
+          </div>
+        </div>
+        <!--小红书-->
+        <div style="height: 70px; width: 300px" class="flex">
+          <div style="margin-top: 10px; margin-left: 10px">
+            <img
+              src="https://s21.ax1x.com/2024/04/08/pFL4u7D.png"
+              width="50px"
+              height="50px"
+            />
+          </div>
+          <div>
+            <a style="text-decoration: none;" href="https://www.xiaohongshu.com/user/profile/5e0f071f00000000010043d1">
+              <p
+              style="
+                margin-left: 12px;
+                margin: top 30px;
+                color: #a939a2;
+                font-size: 20px;
+              "
+            >
+              @打工仔王富贵儿
+              </p>
+            </a>
+          </div>
+        </div>
+        <!--抖音-->
+        <div style="height: 70px; width: 300px" class="flex">
+          <div style="margin-top: 10px; margin-left: 10px">
+            <img
+              src="https://s21.ax1x.com/2024/04/08/pFL4JjP.png"
+              width="50px"
+              height="50px"
+            />
+          </div>
+          <div>
+            <a style="text-decoration: none;" href="https://www.douyin.com/user/MS4wLjABAAAAT9yULQKmng9z5MvC7mGKdMh8_kTHa0iX4BfxG1k9lC8">
+              <p
+              style="
+                margin-left: 12px;
+                margin: top 30px;
+                color: #a939a2;
+                font-size: 20px;
+              "
+            >
+              @王富贵儿
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
     <!--主区域-->
     <div class="flex1 flex shu">
       <!--口号栏-->
-      <div
-        style="
-          height: 80px;
-          z-index: 1;
-          border-bottom: 1px solid #999;
-          background-image: url(https://s21.ax1x.com/2024/04/07/pFLFoVS.jpg);
-          background: size height 80px;
-          background-position: center;
-        "
-        class="baise yinying"
-      ></div>
+      <div style="height: 120px" class="baise yinying flex">
+       <div><img src="https://s21.ax1x.com/2024/04/07/pFLFoVS.jpg"
+       height="120px"
+       width="471px">
+       </div>
+       <div><img src="https://s21.ax1x.com/2024/04/07/pFLFoVS.jpg"
+       height="120px"
+       width="476px">
+       </div>
+       <div><img src="https://s21.ax1x.com/2024/04/07/pFLFoVS.jpg"
+        height="120px"
+        width="471px">
+        </div>
+      </div>
       <!--内容栏-->
       <div
         style="overflow: auto; background-color: #f8c5f5"
         class="flex1 flex neirong"
       >
         <!--左区-->
-        <div style="width: 1063px;" class="flex shu mg8">
+        <div style="flex: 3" class="flex shu mg8">
           <!--安利区-->
-          <div class="flex shu">
+          <div class="flex shu anli">
             <!--列表项-->
             <div
               style="height: 200px; background-color: #eaace6"
-              class="baise mg8t yinying flex kuang"
+              class="baise mg8t yinying flex"
             >
               <!--图片-->
               <div style="margin-left: 20px; margin-top: 15px">
@@ -148,65 +260,94 @@
               </div>
             </div>
             <div
-              style="
-                height: 200px;
-                background-color: #eaace6;
-                
-              "
-              class="baise mg8t yinying kuang flex"
+              style="height: 200px; background-color: #eaace6"
+              class="baise mg8t yinying flex"
             >
               <!--文字-->
-              <div style="margin: left 0px;">
+              <div style="margin: left 0px" class="wenzi">
                 <a
                   href="https://www.bilibili.com/video/BV1QQ4y1d7Gz/?spm_id_from=333.337.search-card.all.click&vd_source=84d8fb661274de94a56c51bdba23a811"
                 >
-                  <img src="https://s21.ax1x.com/2024/04/08/pFLngXj.jpg" 
-                  width="830px"
-                  height="200px"/>
+                  <img
+                    src="https://s21.ax1x.com/2024/04/08/pFLngXj.jpg"
+                    width="830px"
+                    height="200px"
+                  />
                 </a>
               </div>
               <!--图片-->
-              <div style="margin-top: 15px;margin-left: 18px;">
+              <div style="margin-top: 15px; margin-left: 18px" class="tupian">
                 <img
                   src="https://s21.ax1x.com/2024/04/07/pFLkbdO.jpg"
                   width="200px"
-                  height="165px"/>
+                  height="165px"
+                />
               </div>
-                
-              
             </div>
             <div
               style="height: 200px; background-color: #eaace6"
-              class="baise mg8t yinying kuang"
+              class="baise mg8t yinying flex"
             >
               <!--图片-->
-              <div></div>
+              <div style="margin-left: 20px; margin-top: 15px">
+                <img
+                  src="https://s21.ax1x.com/2024/04/07/pFLkqoD.jpg"
+                  width="200px"
+                  height="165px"
+                />
+              </div>
               <!--文字-->
-              <div></div>
+              <div style="margin-left: 20px; margin-top: 0px">
+                <a
+                  href="https://www.bilibili.com/video/BV1XQ4y1B7nt/?spm_id_from=333.337.search-card.all.click&vd_source=84d8fb661274de94a56c51bdba23a811"
+                >
+                  <img
+                    src="https://s21.ax1x.com/2024/04/08/pFLsXSU.jpg"
+                    width="823px"
+                    height="200px"
+                  />
+                </a>
+              </div>
             </div>
             <div
               style="height: 200px; background-color: #eaace6"
-              class="baise mg8t yinying kuang"
+              class="baise mg8t yinying flex"
             >
-              <!--图片-->
-              <div></div>
               <!--文字-->
-              <div></div>
+              <div style="margin: left 0px">
+                <a
+                  href="https://www.bilibili.com/video/BV1Xg4y1N7xZ/?spm_id_from=333.337.search-card.all.click"
+                >
+                  <img
+                    src="https://s21.ax1x.com/2024/04/08/pFLyN0s.jpg"
+                    width="830px"
+                    height="200px"
+                  />
+                </a>
+              </div>
+              <!--图片-->
+              <div style="margin-top: 15px; margin-left: 18px">
+                <img
+                  src="https://s21.ax1x.com/2024/04/07/pFLkOFe.jpg"
+                  width="200px"
+                  height="165px"
+                />
+              </div>
             </div>
           </div>
         </div>
         <!--右区-->
-        <div style="width: 350px;" class="flex shu mg8r mg8t youqu">
+        <div style="flex: 1; margin-top: 15px" class="flex shu mg8r youqu">
           <!--音乐播放-->
           <div
             style="height: 80px; background-color: #f7acf2"
-            class="baise yinying"
+            class="baise yinying yinyue flex"
           >
             <iframe
               frameborder="no"
               marginwidth="0"
               marginheight="0"
-              width="350px"
+              width="315px"
               height="100px"
               src="//music.163.com/outchain/player?type=2&id=2071752628&auto=1&height=66"
               autoplay="autoplay"
@@ -216,7 +357,14 @@
             </iframe>
           </div>
           <!--列表-->
-          <div style="height: 400px" class="baise mg8t yinying"></div>
+          <div style="z-index: 1" class="mg8t">
+            <img
+              src="https://s21.ax1x.com/2024/04/08/pFL6vZ9.jpg"
+              height="400px"
+              width="315px"
+              margin="0 0 0"
+            />
+          </div>
         </div>
       </div>
     </div>
