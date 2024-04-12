@@ -49,6 +49,59 @@
         box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px,
           rgb(0, 0, 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
       }
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+
+      #nav {
+        position: relative;
+        border: none;
+
+        display: flex;
+        list-style: none;
+        background: #f8c5f5;
+
+        padding: 10px;
+      }
+
+      #nav li a {
+        position: relative;
+        padding: 15px 50px;
+        font: 500 24px "优设标题黑";
+        border: none;
+        outline: none;
+        color: rgb(178, 37, 206);
+        display: inline-block;
+        text-decoration: none;
+        z-index: 3;
+      }
+
+      .slide1,
+      .slide2 {
+        position: absolute;
+        display: inline-block;
+        height: 60px;
+        border-radius: 10em;
+        transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1.05);
+      }
+
+      .slide1 {
+        background-color: rgb(186, 131, 244);
+        z-index: 2;
+      }
+
+      .slide2 {
+        opacity: 0;
+        background-color: rgba(184, 124, 248, 0.5);
+        z-index: 1;
+        box-shadow: 0 0 20px #ffffffaa inset;
+      }
+
+      .squeeze {
+        transform: scale(0.9);
+      }
 
       @media (max-width: 600px) {
         .cebian {
@@ -115,7 +168,7 @@
 
       <!--简介栏-->
       <div
-        style="background-color: #fbb2f5; height: 290px; flex-direction: column"
+        style="background-color: #fbb2f5; height: 360px; flex-direction: column"
         class="flex1 flex"
       >
         <!--微博-->
@@ -127,21 +180,15 @@
               height="50px"
             />
           </div>
-          <div style="text-decoration: none">
+          <div
+            style="text-decoration: none; margin-left: 12px; margin-top: 20px"
+            class="flex"
+          >
             <a
               style="text-decoration: none"
               href="https://weibo.com/u/7145854258"
             >
-              <p
-                style="
-                  margin-left: 12px;
-                  margin: top 30px;
-                  color: #a939a2;
-                  font-size: 20px;
-                "
-              >
-                @SNH48-王睿琦
-              </p>
+              <p style="color: #a939a2; font-size: 20px">@SNH48-王睿琦</p>
             </a>
           </div>
         </div>
@@ -154,21 +201,14 @@
               height="50px"
             />
           </div>
-          <div>
+          <div
+            style="text-decoration: none; margin-left: 12px; margin-top: 20px"
+          >
             <a
               style="text-decoration: none"
               href="https://space.bilibili.com/398414048?spm_id_from=333.337.0.0"
             >
-              <p
-                style="
-                  margin-left: 12px;
-                  margin: top 30px;
-                  color: #a939a2;
-                  font-size: 20px;
-                "
-              >
-                @有点怂的你琦
-              </p>
+              <p style="color: #a939a2; font-size: 20px">@有点怂的你琦</p>
             </a>
           </div>
         </div>
@@ -181,21 +221,15 @@
               height="50px"
             />
           </div>
-          <div>
+          <div
+            style="text-decoration: none; margin-left: 12px; margin-top: 20px"
+            class="flex"
+          >
             <a
               style="text-decoration: none"
               href="https://www.xiaohongshu.com/user/profile/5e0f071f00000000010043d1"
             >
-              <p
-                style="
-                  margin-left: 12px;
-                  margin: top 30px;
-                  color: #a939a2;
-                  font-size: 20px;
-                "
-              >
-                @打工仔王富贵儿
-              </p>
+              <p style="color: #a939a2; font-size: 20px">@打工仔王富贵儿</p>
             </a>
           </div>
         </div>
@@ -208,21 +242,36 @@
               height="50px"
             />
           </div>
-          <div>
+          <div
+            style="text-decoration: none; margin-left: 12px; margin-top: 20px"
+            class="flex"
+          >
             <a
               style="text-decoration: none"
               href="https://www.douyin.com/user/MS4wLjABAAAAT9yULQKmng9z5MvC7mGKdMh8_kTHa0iX4BfxG1k9lC8"
             >
-              <p
-                style="
-                  margin-left: 12px;
-                  margin: top 30px;
-                  color: #a939a2;
-                  font-size: 20px;
-                "
-              >
-                @王富贵儿
-              </p>
+              <p style="color: #a939a2; font-size: 20px">@王富贵儿</p>
+            </a>
+          </div>
+        </div>
+        <!--网易云音乐-->
+        <div style="height: 70px; width: 300px" class="flex">
+          <div style="margin-top: 10px; margin-left: 10px">
+            <img
+              src="https://s21.ax1x.com/2024/04/12/pFj8QgI.png"
+              width="50px"
+              height="50px"
+            />
+          </div>
+          <div
+            style="text-decoration: none; margin-left: 12px; margin-top: 20px"
+            class="flex"
+          >
+            <a
+              style="text-decoration: none"
+              href="https://music.163.com/#/artist?id=49300433"
+            >
+              <p style="color: #a939a2; font-size: 20px">@王富贵儿</p>
             </a>
           </div>
         </div>
@@ -260,141 +309,27 @@
         class="flex1 flex neirong"
       >
         <!--左区-->
-        <div style="flex: 3" class="flex shu mg8">
-          <!--安利区-->
-          <div class="flex shu anli">
-            <!--列表项-->
-            <div
-              style="height: 200px; background-color: #eaace6"
-              class="baise mg8t yinying flex"
-            >
-              <!--图片-->
-              <div style="margin-left: 20px; margin-top: 15px">
-                <img
-                  src="https://s21.ax1x.com/2024/04/07/pFLkHeK.jpg"
-                  width="200px"
-                  height="165px"
-                />
-              </div>
-              <!--文字-->
-              <div style="margin-left: 20px; margin-top: 0px">
-                <a
-                  href="https://www.bilibili.com/video/BV1ia411F7Q7/?spm_id_from=333.337.search-card.all.click&vd_source=84d8fb661274de94a56c51bdba23a811"
-                >
-                  <img
-                    src="https://s21.ax1x.com/2024/04/07/pFLAypd.jpg"
-                    width="823px"
-                    height="200px"
-                  />
-                </a>
-              </div>
-            </div>
-            <div
-              style="height: 200px; background-color: #eaace6"
-              class="baise mg8t yinying flex"
-            >
-              <!--文字-->
-              <div style="margin: left 0px" class="wenzi">
-                <a
-                  href="https://www.bilibili.com/video/BV1QQ4y1d7Gz/?spm_id_from=333.337.search-card.all.click&vd_source=84d8fb661274de94a56c51bdba23a811"
-                >
-                  <img
-                    src="https://s21.ax1x.com/2024/04/08/pFLngXj.jpg"
-                    width="830px"
-                    height="200px"
-                  />
-                </a>
-              </div>
-              <!--图片-->
-              <div style="margin-top: 15px; margin-left: 18px" class="tupian">
-                <img
-                  src="https://s21.ax1x.com/2024/04/07/pFLkbdO.jpg"
-                  width="200px"
-                  height="165px"
-                />
-              </div>
-            </div>
-            <div
-              style="height: 200px; background-color: #eaace6"
-              class="baise mg8t yinying flex"
-            >
-              <!--图片-->
-              <div style="margin-left: 20px; margin-top: 15px">
-                <img
-                  src="https://s21.ax1x.com/2024/04/07/pFLkqoD.jpg"
-                  width="200px"
-                  height="165px"
-                />
-              </div>
-              <!--文字-->
-              <div style="margin-left: 20px; margin-top: 0px">
-                <a
-                  href="https://www.bilibili.com/video/BV1XQ4y1B7nt/?spm_id_from=333.337.search-card.all.click&vd_source=84d8fb661274de94a56c51bdba23a811"
-                >
-                  <img
-                    src="https://s21.ax1x.com/2024/04/08/pFLsXSU.jpg"
-                    width="823px"
-                    height="200px"
-                  />
-                </a>
-              </div>
-            </div>
-            <div
-              style="height: 200px; background-color: #eaace6"
-              class="baise mg8t yinying flex"
-            >
-              <!--文字-->
-              <div style="margin: left 0px">
-                <a
-                  href="https://www.bilibili.com/video/BV1Xg4y1N7xZ/?spm_id_from=333.337.search-card.all.click"
-                >
-                  <img
-                    src="https://s21.ax1x.com/2024/04/08/pFLyN0s.jpg"
-                    width="830px"
-                    height="200px"
-                  />
-                </a>
-              </div>
-              <!--图片-->
-              <div style="margin-top: 15px; margin-left: 18px">
-                <img
-                  src="https://s21.ax1x.com/2024/04/07/pFLkOFe.jpg"
-                  width="200px"
-                  height="165px"
-                />
-              </div>
-            </div>
-            <div
-              style="height: 200px; background-color: #eaace6"
-              class="baise mg8t yinying flex"
-            >
-              <!--图片-->
-              <div style="margin-left: 20px; margin-top: 15px">
-                <img
-                  src="https://s21.ax1x.com/2024/04/08/pFL5Nx1.jpg"
-                  width="180px"
-                  height="165px"
-                />
-              </div>
-              <!--文字-->
-              <div style="margin-left: 20px; margin-top: 0px">
-                <a
-                  href="https://www.bilibili.com/video/BV1Cg4y1J7ZX/?spm_id_from=333.337.search-card.all.click&vd_source=84d8fb661274de94a56c51bdba23a811"
-                >
-                  <img
-                    src="https://s21.ax1x.com/2024/04/08/pFL5DaD.jpg"
-                    width="843px"
-                    height="200px"
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
+        <div
+          style="
+            flex: 3;
+            align-items: center;
+            justify-content: center;
+            height: 50px;
+            margin-top: 20px;
+          "
+          class="flex"
+        >
+          <ul id="nav">
+            <li class="slide1"></li>
+            <li class="slide2"></li>
+            <li><a href="#">特殊舞台</a></li>
+            <li><a href="#">名场面</a></li>
+            <li><a href="#">Vlog</a></li>
+            <li><a href="#">留言区</a></li>
+          </ul>
         </div>
         <!--右区-->
         <div style="flex: 1; margin-top: 15px" class="flex shu mg8r youqu">
-          <!--音乐播放-->
-
           <!--列表-->
           <div style="z-index: 1" class="mg8t">
             <img
@@ -413,8 +348,30 @@
       data-themeColor="xf-girlPink"
       data-songList="9743172772"
       data-fadeOutAutoplay
+      data-random="11"
     ></div>
     <script src="https://player.xfyun.club/js/xf-MusicPlayer/js/xf-MusicPlayer.min.js"></script>
     <script src="https://player.xfyun.club/js/yinghua.js"></script>
   </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+    $("#nav a").on("click", function () {
+      var position = $(this).parent().position();
+      var width = $(this).parent().width();
+      $("#nav .slide1").css({ opacity: 1, left: +position.left, width: width });
+    });
+    $("#nav a").on("mouseover", function () {
+      var position = $(this).parent().position();
+      var width = $(this).parent().width();
+      $("#nav .slide2")
+        .css({ opacity: 1, left: +position.left, width: width })
+        .addClass("squeeze");
+    });
+    $("#nav a").on("mouseout", function () {
+      $("#nav .slide2").css({ opacity: 0 }).removeClass("squeeze");
+    });
+    var currentWidth = $("#nav li:nth-of-type(3) a").parent("li").width();
+    var current = $("li:nth-of-type(3) a").position();
+    $("#nav .slide1").css({ left: +current.left, width: currentWidth });
+  </script>
 </html>
